@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        .left-border{
+            width:250px;
+            height: 963px;
+            background-color: rgb(36, 52, 68);
+            border:1px rgb(134, 129, 129) solid;
+            color:#ffffff;
+        }
+        .box1{
+            display: grid;
+            width: 250px;
+            height: 70px;
+            border-bottom:2px rgb(50,62,74) solid;
+            margin-top: 11px;
+        }
+        .box2{
+            width: 250px;
+            height: 80px;
+            border-bottom:1px rgb(50,62,74) solid;
+        }
+        .top{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .self1{
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        .self2{
+            margin-left: 30px;
+            margin-top: -40px;
+        }
+        .self2 :nth-child(1){
+            font-size: 20px;
+        }
+        .self2 :nth-child(2){
+            font-size: 15px;
+            color: rgb(109, 117, 126);
+            margin-top:5px;
+        }
+        li{
+            list-style-type: none;
+        }
+        .list{
+            width: 250px;
+            height: 700px;
+        }
+        .list li{
+            font-size: 18px;
+            margin-top: 18px;
+            margin-left: 1px;
+        }
+        .list :nth-child(5){
+            background-color: rgb(89,101,219);
+            margin-left: -10px;
+            margin-right: 45px;
+            padding: 10px 0 12px 10px;
+            border-radius: 10px;
+        }
+        .img18{
+            padding-left:100px;
+        }
+        .num{
+            position: relative;
+            font-size: 10px;
+            color: rgb(89,101,219);
+            margin-left: -15px;
+            top: -3px;
+        }
+        .first{
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+        .second{
+            padding-top:10px ;
+            padding-bottom: 4px;
+        }
+        .list .item1{
+            font-size: 10px;
+            color: rgb(71, 80, 90);
+        }
+        .item2{
+            position: relative;
+            margin-left: 10px;
+            top: 1px;
+        }
+        .top-zone{
+            position: relative;
+            width: 1000px;
+            height:60px;
+            background-color:rgb(26, 23, 23);
+            bottom:900px;
+            left: 250px;
+            border: 1px rgb(229,232,239) solid;
+        }
+        .input{
+            font-size: 10px;
+            color: rgb(147, 147, 153);
+            width: 800px;
+            height: 36px;
+            border: 1px rgb(229,232,239) solid;
+            border-radius: 3px;
+            margin-top: 15px;
+            margin-left: 34px;
+        }
+        .input span{
+            position: relative;
+            top: -5px;
+            left: 3px;
+        }
+        .input img{
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+        .country{
+            font-size: 10px;
+            color: rgb(145, 145, 146);
+            width: 110px;
+            height: 36px;
+            border: 1px rgb(229,232,239) solid;
+            border-radius: 3px;
+            margin-left: 872px;
+            margin-top: -38px;
+        }
+        .country img{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .country span{
+            margin-left: 12px;
+            position: relative;
+            top: -3px;
+        }
+        .mid-zone{
+            position: relative;
+            width: 340px;
+            height: 800px;
+            left: 210px;
+            bottom: 915px;
+        }
+        .mid-zone li{
+            color: rgb(58, 63, 68);
+            border: 1px rgb(229,232,239) solid;
+        }
+        .mid-zone :nth-child(1){
+            height: 40px;
+        }
+        .mid-zone :nth-child(1) :nth-child(1){
+            position: relative;
+            margin-left: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            top: -7px;
+        }
+        .mid-zone :nth-child(1) :nth-child(2){
+            position: relative;
+            margin-left: 130px;
+            margin-top: 12px;
+        }
+        .mid-zone :nth-child(1) :nth-child(3){
+            position: relative;
+            font-size: 12px;
+            font-weight: bold;
+            color: rgb(87, 100, 211);
+            margin-left: -70px;
+            top: -7px;
+        }
+        .mid-zone li{
+            height: 108px;
+        }
+        .mid-zone .list1 img{
+            position: relative;
+            top: 30px;
+            left: 40px;
+        }
+
+        .mid-zone .list1 div{
+            margin-left: 100px;
+        }
+        .mid-zone li .item3{
+            margin-top: -20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .mid-zone li .item4{
+            line-height: 13px;
+            margin-right: 70px;
+            margin-top: -8px;
+            font-size: 10px;
+        }
+        .mid-zone li .img1{
+            position: relative;
+            left: 280px;
+            top: -18px;
+        }
+        .mid-zone li .time{
+            font-size: 4px;
+            position: relative;
+            left: 275px;
+            top: -14px; 
+        }
+        .mid-zone li .nums{
+            position: relative;
+            left: 263px;
+            top: -21px;
+            font-size: 10px;
+            color: #fff;
+        }
+        .mid-zone .last-li{
+            height: 90px;
+        }
+        .mid-zone .third-li{
+            background-color: rgb(214, 226, 252);
+            border-left: 5px rgb(89, 102, 218) solid;
+        }
+        .title{
+            height: 40px;
+            border-bottom: 1px rgb(229,232,239) solid;
+            background-color: #fff;
+        }
+        .new-team{
+            color: rgb(102,111,120);
+            position: relative;
+            font-size: 12px;
+            font-weight: bold;
+            left: 32px;
+            top: 8px;
+        }
+        .right-zone .title img{
+            position: relative;
+            left:315px;
+            top: 12px;
+        }
+        .right-zone .title .head{
+            position: relative;
+            left:298px;
+        }
+        .right-zone{
+            position: relative;
+            left: 590px;
+            top: -1730px;
+            border: 1px rgb(201, 203, 207) solid;
+            height: 902px;
+            width: 660px;
+            background-color: rgb(234, 237, 240);
+        }
+        .right-zone .content .left span{
+            position: relative;
+            color: rgb(102,111,120);
+            font-size: 12px;
+            font-weight: bold;
+            left: 30px;
+            top: 0px;
+        }
+        .right-zone .content .left div{
+            font-size: 12px;
+            color: #fff;
+            border: 1px rgb(89,101,219) solid;
+            border-radius: 3px;
+            background-color: rgb(89,101,219);
+            line-height: 3;
+            position: relative;
+            left: 50px;
+            top: 20px;
+            padding: 1px 10px 5px;
+        }
+        .right-zone .content .left img{
+            position: relative;
+            left: 10px;
+            top: 5px;
+        }
+        .right-zone .content .left1 div{
+            width: 270px;
+            left: 20px;
+        }
+        .right-zone .content .left1 .time1{
+            font-size: 10px;
+            color: rgba(149,159,172,0.5);
+            position: relative;
+            left: 260px;
+            top: -60px;
+        }
+        .right-zone .content .right{
+            font-size: 12px;
+            color:rgb(95,109,121);
+            background-color: rgb(203, 212, 221);
+            border: 1px rgb(234,239,244) solid;
+            border-radius: 3px;
+            width: 300px;
+            height: 70px;
+            line-height: 1.5;
+            padding: 10px 16px 0;
+        }
+        .right-zone .content .right{
+            position: relative;
+            left: 275px;
+            top: 20px;
+        }
+        .right-zone .content .right .time2{
+            position: relative;
+            top: -100px;
+            left: 260px;
+            color: rgba(149,159,172,0.5);
+        }
+        .right-zone .content .left2 div{
+            width:300px;
+            height:100px;
+            left:20px;
+            top:35px;
+        }
+        .right-zone .content .left2 .name{
+            position: relative;
+            top: 50px;
+        }
+        .right-zone .content .left2 .time3{
+            font-size: 10px;
+            color: rgba(149,159,172,0.5);
+            position: relative;
+            top: -210px;
+            left: 280px;
+        }
+        .right-zone .content .right2{
+            position: relative;
+            top: 40px;
+        }
+        .right-zone .content .left3{
+            position: relative;
+            top: 20px;
+            width:380px;
+        }
+        .right-zone .content .left3 .time4{
+            font-size: 10px;
+            color: rgba(149,159,172,0.5);
+            position: relative;
+            top: -120px;
+            left: 350px;
+            height: 18px;
+        }
+        .right-zone .content .left4{
+            position: relative;
+            top: 35px;
+            height:5px;
+            width:350px;
+        }
+        .right-zone .content .left4 .time5{
+            font-size: 10px;
+            color: rgba(149,159,172,0.5);
+            position: relative;
+            top: -50px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="left-border">
+    <div class="box1">
+    <div class="top">
+    LOGO示例
+    </div>
+    </div>
+    <div class="box2">
+    <img  class="self1" src="./1.png">
+    <ul class="self2">
+    <li>名称示例</li>
+    <li>职位示例</li>
+    </ul>
+    </div>
+    <ul class="list">
+        <li class="item1 first">
+            菜单
+        </li>
+        <li>
+            <img src="./14.png">
+            <span class="item2">仪表盘</span>
+        </li>
+        <li>
+            <img src="./15.png">
+            <span class="item2">用户列表</span>
+        </li>
+        <li>
+            <img src="./16.png">
+            <span class="item2">文件</span>
+        </li>
+        <li>
+            <img src="./17.png">
+            <span class="item2">聊天</span>
+            <img class="img18" src="./18.png">
+            <span class="num">6</span>
+    </li>
+        <li>
+            <img src="./19.png">
+            <span class="item2">项目</span>
+        </li>
+        <li>
+            <img src="./20.png">
+            <span class="item2">日程表</span>
+        </li>
+        <li>
+            <img src="./21.png">
+            <span class="item2">支付方式</span>
+        </li>
+        <li class="item1 second">
+            帮助
+        </li>
+        <li>
+            <img src="./22.png">
+            <span class="item2">需要帮助</span>
+        </li>
+        <li>
+            <img src="./23.png">
+            <span class="item2">联系我们</span>
+        </li>
+        <li class="item1 second">
+            设置
+        </li>
+        <li>
+            <img src="./24.png">
+            <span class="item2">账号设置</span>
+        </li>
+        <li>
+            <img src="./25.png">
+            <span class="item2">深色模式</span>
+        </li>
+        <li>
+            <img src="./26.png">
+            <span class="item2">退出</span>
+        </li>
+    </ul>
+    <div class="box4"></div>
+    <div class="top-zone">
+        <div class="input">
+            <img src="./27.png">
+            <span>请输入关键字</span>
+        </div>
+                <div class="country">
+                    <img src="./13.png">
+                    <span>English</span>
+                    <img src="./28.png">
+                </div>
+            </div>
+            <ul class="mid-zone">
+        <li>
+            <span>用户列表</span>
+            <img src="./29.png">
+            <span>新消息</span>
+        </li>
+        <li class="list1">
+            <img src="./2.png">
+            <div class="item3">名称示例</div>
+            <span class="time">4:01 PM</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+            <img class="img1" src="./30.png">
+            <span class="nums">2</span>
+        </li>
+        <li class="list1 third-li">
+            <img src="./3.png">
+            <div class="item3">名称示例</div>
+            <span class="time">3:45 PM</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+        </li>
+        <li class="list1">
+            <img src="./4.png">
+            <div class="item3">新项目</div>
+            <span class="time">昨天</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+            <img class="img1" src="./30.png">
+            <span class="nums">3</span>
+        </li>
+        <li class="list1">
+            <img src="./5.png">
+            <div class="item3">进度更新</div>
+            <span class="time">5天前</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+        </li>
+        <li class="list1">
+            <img src="./6.png">
+            <div class="item3">工作期望</div>
+            <span class="time">1周前</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+            <img class="img1" src="./31.png">
+        </li>
+        <li class="list1">
+            <img src="./7.png">
+            <div class="item3">第一个项目</div>
+            <span class="time">3周前</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+            <img class="img1" src="./31.png">
+        </li>
+        <li class="list1">
+            <img src="./8.png">
+            <div class="item3">新工作机会</div>
+            <span class="time">2019.10.03</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+            <img class="img1" src="/30.png">
+            <span class="nums">1</span>
+        </li>
+        <li class="list1 last-li">
+            <img src="./9.png">
+            <div class="item3">恭喜啦</div>
+            <span class="time">2019.10.02</span>
+            <div class="item4">您现在应该可以访问所有文档，您可以现在试试看...</div>
+        </li>
+</ul>
+<div class="right-zone">
+    <div class="title">
+        <span class="new-team">新团队成员</span>
+        <img class="head" src="./37.png">
+        <img src="./38.png">
+    </div>
+    <ul class="content">
+        <li class="left left1">
+            <img src="./40.png">
+            <span>名字示例</span>
+            <div>嗨！王小样！我们真的非常欢迎您来加入我们团队</div>
+            <span class="time1">9:52 AM</span>
+        </li>
+        <li class="right right1">
+            <div>谢谢您，我很高兴加入这个出色的设计个出色的设个出色的设计团队！非常感谢能有机会开发一些会影响人们生活的产品。 我等不及要开始了！</div>
+            <span class="time2">11:08 AM</span>
+        </li>
+        <li class="left left2">
+            <img src="./40.png">
+            <span>名字示例</span>
+            <div>我们很高兴有您，我们喜欢您在面试中向我们展示的工作，并且您非常适合我们团队和公司中的我们很高兴有您每个人.我们很高兴有您如果您有任何疑问，请随时询问，团队中的某个人将为您提供帮助.</div>
+            <div class="name">我们很高兴有您，我们喜欢您在面试中向我们展示的工作，并且您非常适合我们团队和公司中的我们很高兴有您每个人.</div>
+            <span class="time3">1:15 PM</span>
+        </li>
+        <li class="right right2">
+            <div>谢谢您，我很高兴加入这个出色的设计个出色的设个出色的设计团队！非常感谢能有机会开发一些会影响人们生活的产品。 我等不及要开始了！</div>
+            <span class="time2">2:28 AM</span>
+        </li>
+        <li class="left  left3">
+            <img src="./11.png">
+            <span>Angela Lopez</span>
+            <div>谢谢您，我很高兴加入这个出色的设计个出色的设个出色的设计团队！非常感谢能有机会开发一些会影响人们生活的产品。 我等不及要开始了！</div>
+            <span class="time4">2:59 AM</span>
+        </li>
+        <li class="left left4">
+            <img src="./12.png">
+            <span>Terry Griffin</span>
+            <div>恭喜，王小样，我知道您以后会觉着这是一个非常棒的团队！</div>
+            <span class="time5">3:45 AM</span>
+        </li>
+    </ul>
+</body>
+</html>
