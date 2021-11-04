@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        .box{
+            display:flex;
+            flex-direction: column;
+            background-color: rgb(250, 250, 250);
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600px;
+        }
+        .imgbox{
+            display:flex;
+            width: 850px;
+            height: 400px;
+            flex-wrap: wrap;
+            justify-content:space-around ;
+            align-content: space-around;
+        }
+        img{
+            width: 200px;
+
+        }
+        .top{
+            border:1px solid  rgb(250, 250, 250);
+            background-color:rgb(250, 250,250);
+            padding-left: 10px;
+        }
+        .next{
+            border: 0px solid rgb(59, 58, 58);
+            margin-top: 10px;
+            margin-right: 0px;
+            padding-left: 10px;
+            background-color: rgb(250, 250, 250);
+        }
+        h2{
+            margin-top: 10px;
+            margin-bottom:10px ;
+        }
+        ol{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .head{
+            background-color: rgb(27, 27, 27);
+            color: rgb(223, 215, 215);
+        }
+        .foot{
+            background-color: rgb(223, 215, 215);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+     <div class="top">
+     <div class="title">图片</div>
+     <div class="imgbox">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+         <img src="./2.jpeg">
+     </div>
+    </div>
+    <div class="next">
+        <h1>文章一级标题</h1>
+        <h2>文章二级标题</h2>
+        <div>文章作者 文章发表时间</div>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+    </div>
+    <table>
+        <thead>
+            <tr class="head">
+                <td width="50">表头</td>
+                <td>表头</td>
+                <td>表头</td>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td width="200">表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td width="200">表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td width="200">表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>操作</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="foot">
+                    <td>总计</td>
+                    <td>1000</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+            </table>
+</body>
+</html>
